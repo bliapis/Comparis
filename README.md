@@ -14,6 +14,7 @@ What has been done:
    - comparis.api -> Web API http://localhost:8020/swagger/index.html
    - comparisdb -> SQL Server -> Server=localhost;Database=ComparisDb;User Id=sa;Password=admin1234;
    - jagerservice -> Jaeger tracing tool: http://localhost:16686/
+  
   Obs -> Jaeger is saving tracings only running API from Visual Studio, it is not saving by container to container, it is an issue that I will fix soon.
   
 
