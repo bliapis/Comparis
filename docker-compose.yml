@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  comparis.api:
+    image: ${DOCKER_REGISTRY-}comparisapi
+    build:
+      context: .
+      dockerfile: src/Comparis.API/Dockerfile
+  
+  comparisdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  jagerservice:
+    image: jaegertracing/all-in-one:latest
